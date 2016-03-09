@@ -1,0 +1,76 @@
+{% extends "layout.nunjucks" %} {% block config %}
+<title>Page Title</title>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,900' rel='stylesheet' type='text/css'> {% endblock %} {% block banner %}
+<!-- create your banner in here -->
+<div class="desktop">
+
+</div>
+<div class="mobile--portrait">
+  <div class="content">
+    <img class="home--smilie" src="./img/smilie_home.png">
+    <div class="home--title">Speechless</div>
+    <div class="home--tagline" >Saving you from lying.</div>
+  </div>
+    <footer class="home">
+      Blake | <a href="mailto:zebd78@gmail.com"><img src="./img/email.png"></a>
+    </footer>
+    <div class="mobile--slide">
+    <button class="swipe_toggle" ><img src="./img/swipe_toggle.svg" alt=""></button>
+    <div class="copybox">
+      <div class="border-top"></div>
+      <div class="border-bottom"></div>
+      <div class="copy">
+        <p>
+          Valentines, your birthday, anniversaries…Christmas!
+        </p>
+        <p>
+          The spectre of mild dissappointment hangs over them all. Just waiting for that awkward moment after the anticipation when you’ve just ripped open the wrapping paper and you know that someone…else, somewhere…else would love the ‘present’.
+        </p>
+        <p>
+          And because you shouldn’t have lie to loved ones, <strong>Speechless</strong> is our present to you.
+        </p>
+      </div>
+    </div>
+    <div class="rotate">
+      <svg class="phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" viewBox="0 0 56 30">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #fff;
+              fill-rule: evenodd;
+            }
+          </style>
+        </defs>
+        <path d="M56.004,28.612 L56.004,1.376 C56.004,0.614 55.377,-0.013 54.617,-0.013 L1.400,-0.013 C0.636,-0.013 0.013,0.614 0.013,1.376 L0.013,28.612 C0.013,29.377 0.636,30.005 1.400,30.005 L54.617,30.005 C55.377,30.005 56.004,29.377 56.004,28.612 ZM52.790,10.233 C52.990,10.233 53.151,10.394 53.151,10.595 L53.151,19.395 C53.151,19.596 52.990,19.760 52.790,19.760 L52.115,19.760 C51.918,19.760 51.757,19.596 51.757,19.395 L51.757,10.595 C51.757,10.394 51.918,10.233 52.115,10.233 L52.790,10.233 ZM2.525,14.997 C2.525,13.548 3.694,12.377 5.135,12.377 C6.578,12.377 7.750,13.548 7.750,14.997 C7.750,16.440 6.578,17.613 5.135,17.613 C3.694,17.613 2.525,16.440 2.525,14.997 ZM10.561,27.754 L10.561,2.237 L49.367,2.237 L49.367,27.754 L10.561,27.754 Z"
+          class="cls-1" />
+      </svg>
+      <span>Rotate the phone</span>
+    </div>
+  </div>
+</div>
+
+<div class="mobile--landscape">
+  <div class="videobox">
+    <div class="video"><img src="./img/video_smilie.svg"><div class="tagline">"What matters"</div></div>
+    <div class="video"><img src="./img/video_smilie.svg"><div class="tagline">"Perfect place"</div></div>
+    <div class="video"><img src="./img/video_smilie.svg"><div class="tagline">"One size fits all"</div></div>
+    <div class="video"><img src="./img/video_smilie.svg"><div class="tagline">"Wrong place"</div></div>
+    <div class="video"><img src="./img/video_play.png"><div class="tagline play">Play Demo</div></div>
+    <div class="video"><img src="./img/video_smilie.svg"><div class="tagline">"Re-wrap"</div></div>
+    <div class="video"><img src="./img/video_smilie.svg"><div class="tagline">"Special occasions"</div></div>
+    <div class="video"><img src="./img/video_smilie.svg"><div class="tagline">"Special place"</div></div>
+    <div class="video"><img src="./img/video_smilie.svg"><div class="tagline">"Unusual"</div></div>
+  </div>
+</div>
+<div class="desktop">
+<div class="content">
+  <img src="./img/desktop_smilie.png" class="desktop_smilie">
+  <div class="title">ruh-roh</div>
+  <div class="tagline">
+    It looks like you’re viewing this on a desktop.<br />
+    Try opening this on your mobile.
+  </div>
+</div>
+</div>
+{% endblock %}

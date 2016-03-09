@@ -1,0 +1,18 @@
+{
+  "dcStudio": {
+    "enabler": "https://s0.2mdn.net/ads/studio/Enabler.js",
+    "script": "js/vendor/doubleclick.js"
+  },
+  "dcManager": {
+    "enabler": "https://s0.2mdn.net/ads/studio/Enabler.js",
+    "script": "js/vendor/doubleclick.js"
+  },
+  "adWords": {
+    "enabler": "https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js",
+    "script": "js/vendor/adwords.js"
+  },
+  "sizmek": {
+    "enabler": "https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js",
+    "script": "js/vendor/sizmek.js"
+  }
+}

@@ -1,0 +1,4 @@
+18-02-2016 project now uses ES6, transpiled to ES5 using Babel
+
+09-11-2015 no longer need to run `gulp clean` before each build and serve as
+this is now done automatically

@@ -1,0 +1,186 @@
+/* *************
+CUSTOM STYLES
+**************** */
+@import 'utilities/utilities'
+
+/* *************
+CUSTOM STYLES
+**************** */
+html, body
+  overflow-x hidden
+  overflow-y hidden
+body
+  width 100vw
+  height 100vh
+  overflow hidden
+
+// hide all content initially
+.mobile--landscape, .mobile--portrait, .desktop
+  display none
+
+@media screen and (max-width: 480px) and (orientation: portrait)
+  .mobile--portrait
+    display initial
+    position absolute
+    background-image linear-gradient( to top, rgb(234,185,159) 0%, rgb(234,193,184) 6%, rgb(213,163,199) 28%, rgb(144,122,186) 49%, rgb(90,88,164) 66%, rgb(25,36,90) 100%)
+    color white
+    font-family 'Open Sans', 'sans-serif'
+    font-weight 300
+  & .content
+    & .home--title
+      position absolute
+      left 50%
+      top 40vh
+      transform translate(-50%, 0)
+      font-size 2rem
+      font-weight 900
+      z-index 10
+    & .home--tagline
+      position absolute
+      left 50%
+      top 50vh
+      transform translate(-50%, 0)
+      font-weight 300
+    & .home--smilie
+      position absolute
+      width 300px
+      left 50%
+      top 30%
+      transform translate(-20%, -40%)
+  & footer
+    position absolute
+    bottom 2vh
+    left 50%
+    transform translate(-50%, -50%)
+    & img
+      position relative
+      left 3px
+      top 10px
+      transform translate(0, -50%)
+      width 20px
+
+
+  .mobile--slide
+    position relative
+    left 94vw
+    top 0px
+    width 100vw
+    height 100vh
+    z-index 20
+    & .swipe_toggle
+      position absolute
+      height 50px
+      top 50%
+      transform translate(0, -50%)
+      transform rotate(180deg)
+      border 0
+      outline none
+      background none
+      & img
+        height 100%
+    & .copybox
+      position relative
+      transform translate(-50%, 0)
+      left 55%
+      top 5%
+      width 70%
+      border-right 1px solid white
+    & .copy
+      color white
+      padding 10px 35px 10px 0
+      font-weight 300
+      line-height 1.65rem
+      strong
+        font-weight 900
+
+    & .rotate
+      position absolute
+      bottom 5%
+      left 50%
+      transform translate(-50%, -50%)
+      span
+        color white
+        font-family 'Open Sans', 'sans-serif'
+        font-size 0.8rem
+    & .phone
+      position relative
+      top 6px
+      left -10px
+      width 40px
+      transform rotate(-90deg)
+
+    & .border-top
+      width 10px
+      position absolute
+      top 0
+      right 0
+      border-top 1px solid white
+    & .border-bottom
+      width 10px
+      position absolute
+      bottom 0
+      right 0
+      border-top 1px solid white
+
+@media screen and (max-width: 780px) and (orientation: landscape)
+  .mobile--landscape
+    display initial
+    .videobox
+      background-image linear-gradient( to bottom, #d78a7a 0%, #e8c692 100%)
+      position absolute
+      width 100vw
+      height 100vh
+    .video
+      position relative
+      width calc(100% /3)
+      height calc(100% /3)
+      float left
+      border 1px solid darken(#d78a7a, 10%)
+      cursor pointer
+      & .tagline
+        position absolute
+        top 70%
+        left 50%
+        transform translate(-50%, -50%)
+        font-family 'Open Sans', 'sans-serif'
+        color white
+        font-size 1.8vw
+        &.play
+          color purple
+      & img
+        position absolute
+        width 7vw
+        top 40%
+        left 50%
+        transform translate(-50%, -50%)
+        z-index 10
+
+@media screen and (min-width: 780px)
+  body
+    background-image linear-gradient( to top, rgb(234,185,159) 0%, rgb(234,193,184) 6%, rgb(213,163,199) 28%, rgb(144,122,186) 49%, rgb(90,88,164) 66%, rgb(25,36,90) 100%)
+  .desktop
+    display initial
+    color white
+    font-family 'Open Sans', 'sans-serif'
+    .content
+      position absolute
+      top 50%
+      left 50%
+      transform translate(-50%, -50%)
+    .title, .tagline
+      position relative
+      text-align center
+
+    .title
+      font-size 3.5rem
+      font-weight 900
+    .tagline
+      padding-top 1.5rem
+      font-size 1rem
+      font-style italic
+      font-weight 300
+    .desktop_smilie
+      position absolute
+      top -60px
+      left 50%
+      transform translate(-20%, -20%)
