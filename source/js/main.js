@@ -25,3 +25,13 @@ const toggleSlide = () => {
 const swipeToggle = document.querySelector('button.swipe_toggle')
 
 swipeToggle.onclick = toggleSlide;
+
+// VIDEO PLAYERS
+
+$(".video").click(function(e){
+  e.preventDefault();
+  const videoID = $(this).attr("videoID");
+  $(this).html(`<iframe src="//player.vimeo.com/video/${videoID}" width="100%" height="100%" title="0" frameborder="0" autoplay="1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>`);
+  $(this).css('width: 100vw; height:100vh');
+  console.log(this);
+})
