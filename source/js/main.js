@@ -1,9 +1,14 @@
+// FULLSCREEN API
+document.getElementById("button--fullscreen").addEventListener("click", () => {
+  toggleFullScreen();
+ }, false);
+
 // ANIMATION SETTINGS
 const timelineProgress = (position) => {
   console.log(`[custom] animation ${position}`);
 }
 const slideIn = new TimelineMax({
-  paused: true
+  paused: true,
 });
 
 const sliderPop = new TimelineMax({paused:false})
